@@ -14,6 +14,12 @@ Uses React Native SVG
 npm install --save react-native-barcode-pdf417 react-native-svg
 ```
 
+### Link native code:
+
+```
+cd ios && pod install
+```
+
 ### Usage:
 
 ```js
