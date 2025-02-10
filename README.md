@@ -5,7 +5,7 @@ React native component for pdf417 barcode. This module is based on https://githu
 ![screen shot 2017-06-19 at 2 52 59 pm](https://user-images.githubusercontent.com/902357/27300810-09ec0efa-54ff-11e7-971b-fef49851525f.png)
 
 ### Pre install:
-Uses React Native Community ART
+Uses React Native SVG
 
 ### Install:
 ```
