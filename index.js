@@ -1,6 +1,6 @@
 import React, { Component } from "react";
-import { Text, View, ActivityIndicator, StyleSheet } from "react-native";
-import { Group, Shape, Surface } from '@react-native-community/art';
+import { View, ActivityIndicator, StyleSheet } from "react-native";
+import Svg, { G, Path } from "react-native-svg";
 
 import createPDF417 from "./lib/pdf417-min";
 
@@ -48,11 +48,11 @@ export default class RNPDF417 extends Component {
     });
 
     return (
-      <Surface width={width} height={height}>
-        <Group x={0} y={0}>
-          <Shape d={shapes} fill="#000000" />
-        </Group>
-      </Surface>
+      <Svg width={width} height={height}>
+        <G x={0} y={0}>
+          <Path d={shapes.join(" ")} fill="#000000" />
+        </G>
+      </Svg>
     );
   }
 }
